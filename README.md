@@ -25,5 +25,14 @@ sudo mv update-ip /usr/local/bin/
 sudo mv update-ip.service /lib/systemd/system/
 ```
 
+Then enable and start the service:
+```
+sudo systemctl daemon-reload
+sudo systemctl enable update-ip
+sudo systemclt start update-ip
+```
+
+The service is now started and you should see the device on wheresmypi.
+
 
 
