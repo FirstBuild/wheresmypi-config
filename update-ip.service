@@ -1,0 +1,11 @@
+[Unit]
+Description=Update ip address to wheres my pi
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/update-ip
+
+[Install]
+WantedBy=multi-user.target
+
